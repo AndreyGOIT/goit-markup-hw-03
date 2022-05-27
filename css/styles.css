@@ -1,0 +1,260 @@
+:root {
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --accent-color: #2196f3;
+    --hero-bottom-color: #2F303A;
+    --top-color: #FFFFFF;
+    --text-color: #212121;
+    --text-logo-black: #000000;
+    --navigation-contacts-color: #757575;
+    --address-list-mail-color: rgba(255, 255, 255, 0.6);
+    --our-team-background-color: #F5F4FA;
+}
+/* убираем маркировку списка */
+.navigation-list,
+.navigation-contacts,
+.filter-list,
+.examples-list,
+.address-list,
+.our-advantages-list,
+.our-occupation-list,
+.our-team-list {
+    list-style: none;
+}
+/* убираем подчеркивание текста */
+.logo-link-nav,
+.navigation-list-link,
+.navigation-contacts-mail,
+.navigation-contacts-phone,
+.logo-link-bottom,
+.address-list-address-link,
+.address-list-mail,
+.address-list-phone {
+    text-decoration: none;
+}
+body {
+    font-family: var(--primary-font);
+    color: var(--top-color);
+}
+/*===========COMPONENTS==============*/
+.logo-link-nav,
+.logo-link-bottom {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+.our-occupation-main-title,
+.our-team-main-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+/*===========/COMPONENTS==============*/
+/*===========HEADER==============*/
+/* фоновый цвет шапки */
+.top {
+    background: var(--top-color);
+}
+.logo-black {
+    color: var(--text-logo-black);
+}
+.navigation-list-link,
+.navigation-contacts-mail,
+.navigation-contacts-phone {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+/* электронка и телефон фирмы в шапке */
+.navigation-contacts-mail,
+.navigation-contacts-phone {
+    color: var(--navigation-contacts-color);
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+    color: var(--accent-color);
+}
+.navigation-contacts-mail:hover,
+.navigation-contacts-mail:focus {
+    color: var(--accent-color);
+}
+.navigation-contacts-phone:hover,
+.navigation-contacts-phone:focus {
+    color: var(--accent-color);
+}
+/*===========/HEADER==============*/
+
+.filter-btn-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    /* identical to box height, or 162% */
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: var(--our-team-background-color);
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+.filter-btn-text:hover,
+.filter-btn-text:focus {
+    background: var(--accent-color);
+    /* shadow-middle */
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: var(--top-color);
+}
+/* образцы портфолио */
+.examples-list-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+    color: var(--text-color); 
+}
+.examples-list-type {
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+    letter-spacing: 0.03em;
+    color: var(--navigation-contacts-color);
+}
+.examples-list-item {
+    background: var(--top-color);
+    /*border: 1px solid #EEEEEE;*/
+}
+/*==========FOOTER============*/
+.logo-white {
+    color: var(--top-color);
+}
+.address {
+    font-style: normal;
+}
+/* адрес в подвале страницы */
+.address-list-address-link {
+    font-size: 14px;
+    line-height: 1.7;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: var(--top-color);
+}
+/* цвет почты и номера телефона в подвале */
+.address-list-mail,
+.address-list-phone {
+    font-size: 14px;
+    line-height: 1.7;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: var(--address-list-mail-color);
+}
+/* фоновый цвет подвала */
+.bottom {
+    background: var(--hero-bottom-color);
+}
+.address-list-address-link:hover,
+.address-list-address-link:focus {
+    color: var(--accent-color);
+}
+.address-list-mail:hover,
+.address-list-mail:focus {
+    color: var(--accent-color);
+}
+.address-list-phone:hover,
+.address-list-phone:focus {
+    color: var(--accent-color);
+}
+/*==========/FOOTER============*/
+
+/*============HERO=============*/
+.hero {
+    background: var(--hero-bottom-color);
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /* or 136% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--top-color);
+}
+.hero-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: var(--top-color);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+/* Наши достоинства */
+.our-advantages-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+.our-advantages-text {
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: var(--navigation-contacts-color);
+}
+/* Чем мы занимаемся */
+
+
+/* Наша комада */
+.our-team {
+    background: var(--our-team-background-color);
+}
+.our-team-item {
+    background: var(--top-color);
+    /* material shadow v1 */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.our-team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+.our-team-text {
+    font-size: 16px;
+    line-height: 1.19;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--navigation-contacts-color);
+}
+
+/* Не забывайте подсвечивать синим цветом ссылочку на страницу,
+на которой находится пользователь (Александр Репета в своем вебинаре приводил пример с классом current, обратите на это внимание).*/
