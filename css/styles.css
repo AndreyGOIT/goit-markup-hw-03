@@ -32,10 +32,51 @@
 .address-list-phone {
     text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img {
+    display: block;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+button {
+    cursor: pointer;
+}
+address {
+    font-style: normal;
+}
 body {
     font-family: var(--primary-font);
     color: var(--top-color);
 }
+.container {
+    width: 1200px;
+    outline: 2px solid tomato;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    outline: 2px dotted blue;
+}
+/* Остальной код */
+
 /*===========COMPONENTS==============*/
 .logo-link-nav,
 .logo-link-bottom {
@@ -62,6 +103,30 @@ body {
 .top {
     background: var(--top-color);
 }
+.up {
+    padding: 24px 15px;
+}
+.up,
+.navigation,
+.navigation-list,
+.navigation-contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navigation-list {
+    margin-left: 90px;
+}
+.navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+.navigation-contacts {
+    margin-left: auto;
+}
+.navigation-contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .logo-black {
     color: var(--text-logo-black);
 }
@@ -93,7 +158,11 @@ body {
     color: var(--accent-color);
 }
 /*===========/HEADER==============*/
-
+.filter-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .filter-btn-text {
     font-weight: 500;
     font-size: 16px;
@@ -117,6 +186,12 @@ body {
     color: var(--top-color);
 }
 /* образцы портфолио */
+.examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-top: -30px;
+}
 .examples-list-title {
     font-weight: 700;
     font-size: 18px;
@@ -133,17 +208,26 @@ body {
     color: var(--navigation-contacts-color);
 }
 .examples-list-item {
+    flex-basis: calc((100% - 45px) / 3);
     background: var(--top-color);
-    /*border: 1px solid #EEEEEE;*/
+    margin-top: 30px;
+    margin-left: 15px;
+    border: 1px solid #EEEEEE;
 }
 /*==========FOOTER============*/
+.down {
+    padding: 60px 15px;
+}
 .logo-white {
     color: var(--top-color);
 }
-.address {
-    font-style: normal;
-}
 /* адрес в подвале страницы */
+.address-list {
+    margin-top: 20px;
+}
+.address-list-item:not(:last-child) {
+    margin-bottom: 10px;
+}
 .address-list-address-link {
     font-size: 14px;
     line-height: 1.7;
@@ -182,6 +266,9 @@ body {
 .hero {
     background: var(--hero-bottom-color);
 }
+.ind1 {
+    justify-content: center;
+}
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -193,6 +280,8 @@ body {
     color: var(--top-color);
 }
 .hero-btn {
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -224,7 +313,11 @@ body {
     color: var(--navigation-contacts-color);
 }
 /* Чем мы занимаемся */
-
+.our-occupation-list,
+.our-team-list {
+    display: flex;
+    flex-direction: row;
+}
 
 /* Наша комада */
 .our-team {
