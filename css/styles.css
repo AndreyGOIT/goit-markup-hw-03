@@ -12,6 +12,8 @@
     --our-team-background-color: #F5F4FA;
     --header-bottom-line: #ECECEC;
     --portfolio-border-line: #EEEEEE;
+    --our-advantages-bg-color: #F5F4FA;
+    --hero-bg-color: #C4C4C4;
 }
 /* убираем маркировку списка */
 .navigation-list,
@@ -124,7 +126,8 @@ body {
 .up,
 .navigation,
 .navigation-list,
-.navigation-contacts {
+.navigation-contacts,
+.navigation-contacts-item {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -172,6 +175,16 @@ body {
 .navigation-contacts-phone:focus {
     color: var(--accent-color);
 }
+/*.navigation-contacts-mail::before {
+    display: inline-flex;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}*/
+/*.icon-envelope::before {
+    background-image: url("../images/icon-envelope.svg");
+}*/
 /*===========/HEADER==============*/
 
 /*======Фильтр в главном разделе=====*/
@@ -307,9 +320,13 @@ body {
 
 /*============HERO=============*/
 .hero {
-    background: var(--hero-bottom-color);
+    background-color: var(--hero-bg-color);
+    background-image: url("../images/img-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
     padding-top: 200px;
     padding-bottom: 200px;
+    /*background: rgba(47, 48, 58, 0.4);*/
 }
 .hero-title {
     font-weight: 900;
@@ -358,7 +375,6 @@ body {
 .our-advantages-list {
     display: flex;
 }
-
 .our-advantages-item {
     align-items: flex-start;
 }
@@ -381,6 +397,29 @@ body {
     /* or 171% */
     letter-spacing: 0.03em;
     color: var(--navigation-contacts-color);
+}
+.our-advantages-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--our-advantages-bg-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.icon-antena::before {
+    background-image: url("../images/icon-antenna.svg");
+}
+.icon-clock::before {
+    background-image: url("../images/icon-clock.svg");
+}
+.icon-laptop::before {
+    background-image: url("../images/icon-laptop.svg");
+}
+.icon-astronaut::before {
+    background-image: url("../images/icon-astronaut.svg");
 }
 /*=====/Наши достоинства======*/
 
